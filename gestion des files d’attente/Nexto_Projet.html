@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nexto | Solution de gestion des files d'attente</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            
+            <div class="logo">N<span>Exto</span></div>
+            <div class="nav-links">
+                <a href="#">Accueil</a>
+                <a href="#">Fonctionnalités</a>
+                <a href="#">Comment ça marche</a>
+                <a href="#">Contact</a>
+            </div>
+    </div>
+
+        <!-- Hero section: "Simplifiez la gestion des files d'attente dans votre administration" -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Simplifiez la gestion des files d'attente dans votre administration</h1>
+                <p>Une solution moderne et efficace pour améliorer l'expérience de vos usagers et optimiser la gestion de vos services administratifs.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn-primary">Prendre un ticket</a>
+                    <a href="#" class="btn-outline">Voir la démo</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:460px;display:block;margin:auto;">
+                  <defs>
+                    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#0369a1;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#f0f9ff;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+                      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0369a1" flood-opacity="0.18"/>
+                    </filter>
+                    <filter id="softShadow" x="-5%" y="-5%" width="120%" height="130%">
+                      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.07"/>
+                    </filter>
+                  </defs>
+
+                  <!-- Main screen panel -->
+                  <rect x="20" y="16" width="380" height="308" rx="28" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+                  <!-- Inner white card -->
+                  <rect x="38" y="32" width="344" height="276" rx="20" fill="white" opacity="0.97"/>
+
+                  <!-- Header bar -->
+                  <rect x="38" y="32" width="344" height="52" rx="20" fill="url(#bgGrad)"/>
+                  <rect x="38" y="64" width="344" height="20" fill="url(#bgGrad)"/>
+                  <!-- Logo dot -->
+                  <circle cx="64" cy="58" r="10" fill="white" opacity="0.25"/>
+                  <text x="64" y="63" text-anchor="middle" fill="white" font-size="11" font-weight="800" font-family="system-ui">N</text>
+                  <text x="90" y="63" fill="white" font-size="13" font-weight="700" font-family="system-ui" opacity="0.95">Nexto — File d'attente</text>
+                  <!-- status dot -->
+                  <circle cx="354" cy="58" r="6" fill="#4ade80"/>
+                  <text x="343" y="62" text-anchor="end" fill="white" font-size="10" font-family="system-ui" opacity="0.85">En ligne</text>
+
+                  <!-- NOW SERVING big ticket -->
+                  <rect x="54" y="100" width="144" height="118" rx="18" fill="url(#cardGrad)" filter="url(#softShadow)"/>
+                  <text x="126" y="122" text-anchor="middle" fill="#0369a1" font-size="9.5" font-weight="600" font-family="system-ui" letter-spacing="1.5">TICKET ACTUEL</text>
+                  <text x="126" y="172" text-anchor="middle" fill="#0c4a6e" font-size="52" font-weight="800" font-family="monospace" letter-spacing="-2">A47</text>
+                  <rect x="78" y="182" width="96" height="22" rx="11" fill="#0369a1"/>
+                  <text x="126" y="197" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="system-ui">Guichet 3</text>
+
+                  <!-- Stats column right -->
+                  <!-- Waiting -->
+                  <rect x="214" y="100" width="155" height="54" rx="14" fill="#f0f9ff" filter="url(#softShadow)"/>
+                  <text x="232" y="122" fill="#0369a1" font-size="9" font-weight="600" font-family="system-ui" letter-spacing="1">EN ATTENTE</text>
+                  <text x="232" y="144" fill="#0c4a6e" font-size="26" font-weight="800" font-family="monospace">12</text>
+                  <text x="310" y="144" fill="#06b6d4" font-size="11" font-weight="600" font-family="system-ui">personnes</text>
+
+                  <!-- Avg wait -->
+                  <rect x="214" y="162" width="155" height="54" rx="14" fill="#f0f9ff" filter="url(#softShadow)"/>
+                  <text x="232" y="184" fill="#0369a1" font-size="9" font-weight="600" font-family="system-ui" letter-spacing="1">ATTENTE MOY.</text>
+                  <text x="232" y="206" fill="#0c4a6e" font-size="26" font-weight="800" font-family="monospace">8<tspan font-size="13" font-weight="600" fill="#06b6d4"> min</tspan></text>
+
+                  <!-- Queue row of people -->
+                  <rect x="54" y="232" width="314" height="62" rx="14" fill="#f0f9ff"/>
+                  <text x="72" y="251" fill="#0369a1" font-size="9" font-weight="600" font-family="system-ui" letter-spacing="1">FILE D'ATTENTE</text>
+                  <!-- people icons -->
+                  <!-- active (served) -->
+                  <circle cx="80" cy="275" r="13" fill="#0369a1"/>
+                  <text x="80" y="280" text-anchor="middle" fill="white" font-size="13">👤</text>
+                  <!-- waiting people -->
+                  <circle cx="110" cy="275" r="13" fill="#bae6fd"/>
+                  <text x="110" y="280" text-anchor="middle" fill="#0369a1" font-size="13">👤</text>
+                  <circle cx="140" cy="275" r="13" fill="#bae6fd"/>
+                  <text x="140" y="280" text-anchor="middle" fill="#0369a1" font-size="13">👤</text>
+                  <circle cx="170" cy="275" r="13" fill="#bae6fd"/>
+                  <text x="170" y="280" text-anchor="middle" fill="#0369a1" font-size="13">👤</text>
+                  <circle cx="200" cy="275" r="13" fill="#e0f2fe"/>
+                  <text x="200" y="280" text-anchor="middle" fill="#7dd3fc" font-size="13">👤</text>
+                  <circle cx="230" cy="275" r="13" fill="#e0f2fe"/>
+                  <text x="230" y="280" text-anchor="middle" fill="#7dd3fc" font-size="13">👤</text>
+                  <circle cx="260" cy="275" r="13" fill="#e0f2fe"/>
+                  <text x="260" y="280" text-anchor="middle" fill="#7dd3fc" font-size="13">👤</text>
+                  <!-- +5 badge -->
+                  <rect x="282" y="262" width="36" height="26" rx="13" fill="#06b6d4"/>
+                  <text x="300" y="279" text-anchor="middle" fill="white" font-size="11" font-weight="700" font-family="system-ui">+5</text>
+
+                  <!-- Floating notification badge -->
+                  <rect x="298" y="14" width="110" height="34" rx="17" fill="white" filter="url(#softShadow)"/>
+                  <circle cx="317" cy="31" r="8" fill="#06b6d4"/>
+                  <text x="317" y="35" text-anchor="middle" fill="white" font-size="10">🔔</text>
+                  <text x="334" y="35" fill="#0369a1" font-size="10" font-weight="600" font-family="system-ui">Votre tour !</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fonctionnalités principales section (from first image) -->
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités principales</h2>
+            <p class="section-sub">Tout ce dont vous avez besoin pour gérer efficacement vos files d'attente</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎫</div>
+                    <h3>Prise rapide de ticket</h3>
+                    <p>Interface intuitive pour permettre aux usagers de prendre leur ticket en quelques secondes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>Affichage en temps réel</h3>
+                    <p>Écran d'affichage dynamique pour informer les usagers de leur tour en direct.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Gestion facile pour le personnel</h3>
+                    <p>Interface d'administration simple pour appeler et gérer les usagers efficacement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Réduction du temps d'attente</h3>
+                    <p>Optimisez le flux d'usagers et réduisez les temps d'attente significativement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment ça marche ? 3 étapes (second image) -->
+    <div class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <p class="section-sub">Un processus simple en 3 étapes</p>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Choisissez votre service</h3>
+                    <p>Sélectionnez le service administratif dont vous avez besoin parmi les options disponibles.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Obtenez votre ticket</h3>
+                    <p>Recevez immédiatement votre numéro de ticket et attendez confortablement.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Soyez appelé</h3>
+                    <p>Consultez l'écran d'affichage et dirigez-vous vers le guichet indiqué quand c'est votre tour.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Avantages + stats: gain de temps 40%, fluidité, expérience usager, stats en temps réel (second image + third) -->
+    <div class="section" style="background: #f0f9ff; border-radius: 60px; margin: 0 20px 40px 20px;">
+        <div class="container">
+            <h2 class="section-title">Les avantages de Nexto</h2>
+            <div class="advantages-grid">
+                <div class="advantage">
+                    <div class="stat-badge">-40%</div>
+                    <h4>Gain de temps considérable</h4>
+                    <p>Réduisez le temps d'attente moyen de 40% en optimisant le flux d'usagers.</p>
+                </div>
+                <div class="advantage">
+                    <div class="stat-badge">⚡</div>
+                    <h4>Fluidité des files d'attente</h4>
+                    <p>Éliminez les files d'attente physiques et améliorez l’organisation.</p>
+                </div>
+                <div class="advantage">
+                    <div class="stat-badge">🌟</div>
+                    <h4>Meilleure expérience usager</h4>
+                    <p>Offrez un service moderne et transparent à vos usagers.</p>
+                </div>
+                <div class="advantage">
+                    <div class="stat-badge">📊</div>
+                    <h4>Statistiques en temps réel</h4>
+                    <p>Analysez et optimisez votre service avec des données précises.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA "Prêt à moderniser votre service administratif ?" -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>Prêt à moderniser votre service administratif ?</h2>
+            <p>Rejoignez les centaines d'administrations qui font confiance à Nexto pour gérer leurs files d'attente.</p>
+            <a href="#" class="btn-cta">Commencer maintenant →</a>
+        </div>
+    </div>
+
+    <!-- Footer complet (brand + liens rapides + contact) from third image -->
+    <div class="footer container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 16px;">N<span>Exoto</span></div>
+                <p style="color:#5f738c; max-width: 220px;">Simplifie la gestion des files d'attente dans votre administration. Une solution moderne et efficace pour améliorer l'expérience de vos usagers.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens rapides</h4>
+                <a href="#">Accueil</a>
+                <a href="#">Prendre un ticket</a>
+                <a href="#">Admin Panel</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="/cdn-cgi/l/email-protection#f695999882979582b698938e8299d89084">📧 <span class="__cf_email__" data-cfemail="f3909c9d87929087b39d968b879cdd9581">&#160;SmailElkhattab@gmail.com</span></a>
+                <a href="tel:+33123456789">📞 +212 642981375</a>
+                <a href="#">📍 FBS, Maroc</a>
+            </div>
+        </d

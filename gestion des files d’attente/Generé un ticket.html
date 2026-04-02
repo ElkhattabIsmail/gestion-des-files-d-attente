@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexto - Votre Ticket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f5f5;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --border-color: #e0e0e0;
+            --primary-purple: #6a0dad;
+            --primary-purple-light: #9b59b6;
+            --primary-purple-dark: #4b0082;
+            --radius-sm: 12px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .mb-2 { margin-bottom: 2rem; }
+
+        /* Boutons */
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            border: 2px solid transparent;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-purple);
+            border-color: var(--primary-purple);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-purple);
+            color: #fff;
+        }
+
+        .btn-full { width: 100%; }
+
+        /* Navigation */
+        .navbar {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-purple);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+
+        /* Ticket page */
+        .ticket-page {
+            max-width: 450px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .success-icon {
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--primary-purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--primary-purple);
+            background: rgba(106, 13, 173, 0.1);
+        }
+
+        .ticket-box {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .ticket-number {
+            font-size: 6rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -3px;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-purple), var(--primary-purple-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ticket-divider {
+            height: 1px;
+            border-top: 2px dashed var(--border-color);
+            margin: 1.5rem 0;
+        }
+
+        .ticket-meta {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .meta-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            .ticket-number { font-size: 4.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            
+            <div class="logo">N<span>Exto</span></div>
+            <div class="nav-links">
+                <a href="#">Accueil</a>
+                <a href="#">Fonctionnalités</a>
+                <a href="#">Comment ça marche</a>
+                <a href="#">Contact</a>
+            </div>
+    </div>
+
+    
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">             
+                N<span>Exto</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main class="container ticket-page">
+        <div class="success-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <h1 class="ticket-title">Ticket validé</h1>
+        <p class="subtitle subtitle-no-margin">Votre demande a bien été enregistrée.</p>
+
+        <div class="ticket-box">
+            <div class="ticket-number">B12</div>
+            <div class="ticket-divider"></div>
+
+            <div class="ticket-meta">
+                <div>
+                    <div class="meta-label">Service</div>
+                    <div class="meta-value">État Civil</div>
+                </div>
+                <div class="ticket-meta-right">
+                    <div class="meta-label">Heure</div>
+                    <div class="meta-value">14:23</div>
+                </div>
+            </div>
+
+            <div class="waiting-message">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Veuillez attendre votre tour
+            </div>
+        </div>
+
+        <a href="queue.html" class="btn btn-outline btn-full mb-2">Suivre la file d'attente</a>
+        <p class="ticket-note">Conservez ce numéro, il vous sera demandé au guichet.</p>
+    </main>
+</body>
+</html>
