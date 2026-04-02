@@ -281,8 +281,6 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
-
-/* live interactive queue demo */
 .live-demo-section {
     background: var(--bg-light-accent);
     border-radius: 56px;
@@ -405,6 +403,7 @@ body {
     background: white;
     color: #0284c7;
     padding: 14px 38px;
+    margin-top: 2rem;
     border-radius: 48px;
     font-weight: 700;
     text-decoration: none;
