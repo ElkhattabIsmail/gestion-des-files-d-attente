@@ -10,6 +10,8 @@
     --primary: #0284c7;
     --primary-light: #06b6d4;
     --Green-Icon: #08b80e;
+    --yellow-tender:  #c3d144;
+    --yellow-tender-soft:  #bcc756;
     --primary-glow: rgba(3, 105, 161, 0.2);
     --surface-white: #ffffff;
     --bg-soft: #f9fafc;
@@ -297,7 +299,7 @@ body {
 .stat-badge {
     font-size: 2rem;
     font-weight: 800;
-    background: linear-gradient(130deg, var(--primary-dark), var(--primary-light));
+    background: linear-gradient(130deg, var(--yellow-tender), var(--yellow-tender-soft));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -836,7 +838,7 @@ td.big-num {
     border: 1px solid var(--border-color); 
     border-radius: var(--radius-sm); 
     padding: 1rem; 
-    margin-bottom: 1rem; 
+    margin-bottom: 0.5rem; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
