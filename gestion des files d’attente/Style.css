@@ -6,7 +6,6 @@
 
 
 :root {
-                --text-main: #333333; 
     --primary-dark: #0369a1;
     --primary: #0284c7;
     --primary-light: #06b6d4;
@@ -54,6 +53,13 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.nav-links a:last-child {
+    background: #0369a1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 48px;
+}
+
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
@@ -80,6 +86,7 @@ body {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 32px;
     font-weight: 500;
 }
@@ -183,7 +190,7 @@ body {
     padding: 80px 0;
 }
 
-.section-title {
+#section-title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
@@ -476,35 +483,6 @@ body {
     margin-top: 40px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 0 24px;
-    }
-    .hero-content h1 {
-        font-size: 2.3rem;
-    }
-    .navbar {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .nav-links {
-        gap: 24px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .section-title {
-        font-size: 2rem;
-    }
-    .live-panel {
-        flex-direction: column;
-    }
-    .cta-section {
-        padding: 40px 24px;
-    }
-    .hero-content p {
-        max-width: 100%;
-    }
-}
 
 
 
@@ -707,10 +685,6 @@ body {
             font-weight: 700;
         }
 
-        @media (max-width: 768px) {
-            .container { padding: 0 24px; }
-            .ticket-number { font-size: 4.5rem; }
-        }
 
 
 
@@ -868,35 +842,7 @@ td.big-num {
     align-items: center; 
 }
 
-/* --- Responsive Design (Mobile) --- */
-@media (max-width: 768px) {
-    .hero { 
-        flex-direction: column; 
-        text-align: center; 
-        min-height: 0; 
-        padding-top: 3rem; 
-    }
-    .hero h1 { 
-        font-size: 2.5rem; 
-    }
-    .hero-image { 
-        width: 100%; 
-        height: 250px; 
-    }
 
-    .admin-layout { 
-        grid-template-columns: 1fr; 
-    }
-    .current-display { 
-        flex-direction: column; 
-    }
-    .ticket-number { 
-        font-size: 4.5rem; 
-    }
-    .table-wrapper {
-        overflow-x: auto;
-    }
-}
 .btn-group {
     display: flex;
     flex-wrap: wrap;
@@ -1021,4 +967,66 @@ td.big-num {
 .person-icon.active {
     background: #06b6d4;
     color: white;
+}
+
+
+/*  Media qurey for Responsive Design. */
+
+ @media (max-width: 768px) {
+    .hero { 
+        flex-direction: column; 
+        text-align: center; 
+        min-height: 0; 
+        padding-top: 3rem; 
+    }
+    .hero h1 { 
+        font-size: 2.5rem; 
+    }
+    .hero-image { 
+        width: 100%; 
+        height: 250px; 
+    }
+
+    .admin-layout { 
+        grid-template-columns: 1fr; 
+    }
+    .current-display { 
+        flex-direction: column; 
+    }
+    .ticket-number { 
+        font-size: 4.5rem; 
+    }
+    .table-wrapper {
+        overflow-x: auto;
+    }
+    .container {
+        padding: 0 24px;
+    }
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .nav-links {
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .live-panel {
+        flex-direction: column;
+    }
+    .cta-section {
+        padding: 40px 24px;
+    }
+    .hero-content p {
+        max-width: 100%;
+    }
+
+    .container { padding: 0 24px; }
+    .ticket-number { font-size: 4.5rem; }
 }
