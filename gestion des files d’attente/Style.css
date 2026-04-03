@@ -55,11 +55,14 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.nav-links a:last-child {
-    background: #0369a1;
+#Commencer_Ref_Btn {
+    background: var(--primary);
     color: white;
     padding: 10px 20px;
     border-radius: 48px;
+}
+#Commencer_Ref_Btn:hover {
+    background: var(--primary-dark);
 }
 
 .logo {
