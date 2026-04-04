@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -37,12 +39,14 @@ body {
     color: var(--text-body);
     line-height: 1.4;
     scroll-behavior: smooth;
+
 }
 
 .container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 32px;
+
 }
 
 /* header / navigation */
@@ -690,6 +694,9 @@ body {
             font-weight: 700;
         }
 
+        .ticket-note {
+            margin-bottom: 5rem;
+        }
 
 
 
@@ -710,6 +717,7 @@ body {
         /* File d'attente (Table) */
 .queue-page { 
     margin-top: 4rem; 
+    margin-bottom: 5rem;
 }
 
 .estimate-banner { 
