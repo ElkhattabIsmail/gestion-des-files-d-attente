@@ -43,13 +43,23 @@ body {
 }
 
 .container {
+    border-radius: var(--radius-lg);
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 32px;
 
 }
 
-/* header / navigation */
+.Main-Nav-Container {
+    background-color: var(--bg-light-accent);
+    border-radius: var(--radius-lg);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: sticky;
+    top: 0;
+}
+/* navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -187,7 +197,7 @@ body {
 
 .hero-illustration {
     flex: 0.9;
-    background: linear-gradient(145deg, #e0f2fe, #f0f9ff);
+    background: linear-gradient(145deg, #e0f2fe, var(--bg-light-accent));
     border-radius: 48px;
     padding: 20px;
     text-align: center;
@@ -896,7 +906,7 @@ td.big-num {
 }
 .hero-illustration {
     flex: 0.9;
-    background: linear-gradient(145deg, #e0f2fe, #f0f9ff);
+    background: linear-gradient(145deg, #e0f2fe, var(--bg-light-accent));
     border-radius: 48px;
     padding: 20px;
     text-align: center;
