@@ -515,12 +515,10 @@ body {
 /* ================================ */
 
         .selection-page {
-            align-content: center;
-            align-items: center;
-            max-width: 1000px;
-            margin-top: 4rem;
+            width: 50%;
+            margin: 0 auto;
         }
-
+ 
         .service-link {
             text-decoration: none;
             color: inherit;
